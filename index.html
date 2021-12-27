@@ -2,52 +2,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Evgeniy G</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="avatar.jpg" width="200" alt="Тут должна быть моя фотка">
-            </td>
-            <td>
-                <h1>Евгений Горланов</h1>
-                <p> <em> Я хочу стать <strong> java script</strong> программистом</em></p>
-                <p> <i>Мне очень интересно изучать программирование</i></p>
-            </td>
-        </tr>
-    </table>
+<div class="container">
+    <div class="info">
+        <img src="avatar.jpg" alt="Тут должна быть моя фотка" class="avatar">
+        <div class="info-text">
+        <h1>Евгений Горланов</h1>
+        <p> Я хочу стать <strong> java script</strong> программистом</p>
+        <p> <i>Мне очень интересно изучать программирование</i></p>
+        
+        <h4>Мои социальные сети</h4>
+           
+        <a href="https://t.me/sw1zzy1337" target="_blank">Telegram</a>
+            |
+            <a href="https://instagram.com/evgeniy.gorlanov" target="_blank">Instagram</a>
+        </div>
+    </div>
     
 
 
-    <hr>
-
-    <h2>Мои социальные сети</h2>
-    <ul type="circle">
-        <li><a href="https://t.me/sw1zzy1337" target="_blank">Telegram</a></li>
-        <li><a href="https://instagram.com/evgeniy.gorlanov" target="_blank">Instagram</a></li>
-
-    </ul>
-    <hr>
+<div class="card bg-yellow">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
         <li>Киберспортсмен</li>
         <li>Изучать программирование</li>
         <li>Проводить время с друзьями</li>
     </ol>
-    <hr>
+</div>
 
+<div class="card bg-green">
 <h2>Опыт работы</h2>
-<table>
-        <tr>
-            <th>Вид деятельности</th>
-            <th>Должность</th>
-            <th>Год</th>
+<table class="table">
+        <tr> 
+            <td>Внутреняя и наружная отделка</td> 
+            <td>Штукатур-Маляр</td>
+            <td>2015-2018</td>
+        </tr>
+        <tr> 
+            <td>Букмекерские вилки</td> 
+            <td>Вилочник</td>
+            <td>2018-2019</td>
         </tr>
         <tr> 
             <td>Внутреняя и наружная отделка</td> 
             <td>Штукатур-Маляр</td>
-            <td>2015-2021</td>
-        </tr>
+            <td>2019-2021</td>
+        </tr> 
         <tr> 
             <td>Программирование</td> 
             <td>Учусь программированию</td>
@@ -56,25 +58,45 @@
 
 
 </table>
-<hr>
-    <h2>Steam account</h2>
-    <a href="steam.html" target="_blank">Ссылка на steam</a>
+</div>
 
-    <hr>
+<div class="card bg-red">
+    <h2>Примеры моих работ</h2>
+    <ul class="link-list">
+        <li>
+            <a href="https://steamcommunity.com/id/-sw1zzy1337/">Мои проекты</a>
+        </li>
+        <li>
+            <a href="https://github.com/alien-js/mypage">Github</a>
+        </li>
+    </ul>
+</div>
+
+<div class="contact">
     <h2>Связаться со мной</h2>
     <form action="/">
+        <div class="row">
+        <div class="form-group">
         <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Начните вводить ваше имя">
-<br>
+        <input type="text" id="name" placeholder="Введите имя...">
+    </div>
+    <div class="form-group">
         <label for="email">Ваше email:</label>
-        <input type="text" id="email" placeholder="Начните вводить ваш email">
-<br>
+        <input type="text" id="email" placeholder="Введите email...">
+    </div>
+</div>
+    <div class="form-group">
 <label for="text">Ваше сообщение:</label>
-<br>
+
 <textarea id="text" cols="30" rows="6"></textarea>
-<br>
-<input type="submit" value="Связаться!">
+</div>  
+<input class="btn" type="submit" value="Связаться!">
+
     </form>
-    <hr>
+</div>
+
+<div class="position">
+    <div class="box"></div>
+</div>
 </body>
 </html>
